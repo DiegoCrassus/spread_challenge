@@ -10,9 +10,9 @@ def run_banco():
     max_rodadas = 1000
     while num_rodadas != max_rodadas:
         status_jogador_aleatorio = banco_imobiliario.jogador_aleatorio.get_status()
-        status_jogador_cauteloso = banco_imobiliario.jogador_aleatorio.get_status()
-        status_jogador_exigente = banco_imobiliario.jogador_aleatorio.get_status()
-        status_jogador_impulsivo = banco_imobiliario.jogador_aleatorio.get_status()
+        status_jogador_cauteloso = banco_imobiliario.jogador_cauteloso.get_status()
+        status_jogador_exigente = banco_imobiliario.jogador_exigente.get_status()
+        status_jogador_impulsivo = banco_imobiliario.jogador_impulsivo.get_status()
 
         if status_jogador_aleatorio == None:
             tem_vencedor = banco_imobiliario.jogada(banco_imobiliario.jogador_aleatorio)
